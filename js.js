@@ -16,7 +16,7 @@ function readTextFile(file, callback) {
 readTextFile("/purchaseorders.json", function(text){
     var data = JSON.parse(text);
     result = data.mvPurchaseOrders;
-    console.log(result)
+    //console.log(result)
     var listDiv = document.getElementById('list-puntate');
     var ul=document.createElement('ul');
     for (var i = 0; i < result.length; ++i) {
@@ -35,7 +35,7 @@ function details(index){
 
     localStorage.setItem("index", index);
 
-    window.open('http://127.0.0.1:5500/details.html', '_blank');
+    window.open('/details.html', '_blank');
 
     // myWindow.document.write('\
     // \
