@@ -13,7 +13,7 @@ function readTextFile(file, callback) {
 }
 
 //usage:
-readTextFile("/purchaseorders.json", function(text){
+readTextFile("purchaseorders.json", function(text){
     var data = JSON.parse(text);
     result = data.mvPurchaseOrders;
     //console.log(result)
